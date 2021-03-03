@@ -11,11 +11,12 @@
   --border-projects: 1px solid #eeeeee;
   --border-clients: 1px solid #afb1b8;
   --border-clients-hover: 1px solid #2196f3;
+  --border-modal-close: 1px solid rgba(0, 0, 0, 0.1);
+  --border-mailing-input: 1px solid rgba(255, 255, 255, 0.3);
   --background-icons: rgba(255, 255, 255, 0.1);
   --background-features: rgba(47, 48, 58, 0.8);
   --background-portfolio: rgba(33, 150, 243, 0.9);
   --background-backdrop: rgba(0, 0, 0, 0.2);
-  --border-modal-close: 1px solid rgba(0, 0, 0, 0.1);
   --shadow-card: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   --shadow-project: 0px 1px 1px rgba(0, 0, 0, 0.12),
@@ -468,7 +469,7 @@ img {
   display: flex;
 }
 
-.footer-list > .footer-item:not(:last-child){
+.footer-list > .footer-item:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -481,7 +482,6 @@ img {
   border-radius: 50%;
   background-color: var(--background-icons);
   fill: var(--color-white);
-  
 
   transition: background-color var(--animation);
 }
@@ -489,6 +489,29 @@ img {
 .footer-link:hover,
 .footer-link:focus {
   background-color: var(--color-blue);
+}
+
+/* ФОРМА РОЗССИЛКИ */
+
+.mailing-input {
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  margin-right: 12px;
+  background-color: transparent;
+  border: var(--border-mailing-input);
+  box-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.universal-btn.signing {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 29px;
+}
+
+.mailing-icon {
+  margin-left: 10px;
 }
 
 /* ПОРТФОЛИО */
@@ -695,12 +718,12 @@ img {
 }
 
 .checkbox:checked + .icon {
-border-color: var(--color-blue);
-background-image: url();
-background-size: contain;
-background-origin: border-box;
-border-radius: ;
-} 
+  border-color: var(--color-blue);
+  background-image: url();
+  background-size: contain;
+  background-origin: border-box;
+  border-radius: ;
+}
 
 .label {
   transition: transform 250ms linear;
