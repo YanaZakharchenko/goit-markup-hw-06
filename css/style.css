@@ -321,7 +321,7 @@ img {
 }
 
 .team-size {
-  padding: 30px 44px;
+  padding: 30px 20px;
 }
 
 .member-team {
@@ -344,12 +344,10 @@ img {
 
 .team-links {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .team-item {
-  justify-content: center;
-  align-items: center;
   margin-right: 10px;
 }
 
@@ -358,6 +356,9 @@ img {
 }
 
 .social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
