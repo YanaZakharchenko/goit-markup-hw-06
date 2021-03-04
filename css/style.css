@@ -734,19 +734,16 @@ img {
   margin-bottom: 4px;
 }
 
-.form-list .imput-set {
+.imput-set {
   position: relative;
 }
 
-.form-list .form-icon {
+.form-icon {
   position: absolute;
-  top: 11px;
+  top: 50%;
   left: 12px;
   transform: translateY(-50%);
-}
-
-.form-list .form-imput:focus ~ .form-icon {
-  fill: var(--color-blue);
+  fill: var(--color-gray);
 }
 
 .form-comment {
