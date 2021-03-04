@@ -723,6 +723,14 @@ img {
   padding: 0 0 0 45px;
   border-radius: 4px;
   border: var(--border-form-input);
+  outline: none;
+
+  transition: border var(--animation);
+}
+
+.form-imput:hover,
+.form-imput:focus {
+  border: var(--border-clients-hover);
 }
 
 .form-label {
@@ -734,16 +742,23 @@ img {
   margin-bottom: 4px;
 }
 
-.imput-set {
+.form-set .imput-set {
   position: relative;
 }
 
-.form-icon {
+.form-set .form-icon {
   position: absolute;
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
   fill: var(--color-gray);
+
+  transition: fill var(--animation);
+}
+
+.form-imput:hover ~ .form-icon,
+.form-imput:focus ~ .form-icon {
+  fill: var(--color-blue);
 }
 
 .form-comment {
@@ -752,6 +767,14 @@ img {
   margin-bottom: 20px;
   border-radius: 4px;
   border: var(--border-form-input);
+  outline: none;
+
+  transition: border var(--animation);
+}
+
+.form-comment:hover,
+.form-comment:focus {
+  border: var(--border-clients-hover);
 }
 
 .form-comment::placeholder {
