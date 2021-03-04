@@ -735,12 +735,14 @@ img {
 }
 
 .form-list .imput-set {
-  /* position: relative; */
+  position: relative;
 }
 
 .form-list .form-icon {
   position: absolute;
-  top: 50%;
+  top: 11px;
+  left: 12px;
+  transform: translateY(-50%);
 }
 
 .form-list .form-imput:focus ~ .form-icon {
@@ -757,6 +759,12 @@ img {
 
 .form-comment::placeholder {
   color: rgba(117, 117, 117, 0.5);
+}
+
+.conditions {
+  font-weight: 400;
+  text-decoration: underline;
+  color: var(--color-blue);
 }
 
 /* .checkbox {
