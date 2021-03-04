@@ -495,13 +495,12 @@ img {
 
 .mailing-input {
   width: 358px;
-  height: 50px;
   padding: 15px 16px;
   margin-right: 12px;
+  border-radius: 4px;
   background-color: transparent;
   border: var(--border-mailing-input);
   box-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
 }
 
 .universal-btn.signing {
@@ -685,10 +684,6 @@ img {
   cursor: pointer;
 }
 
-/* .modal-close:hover .modal-icon,
-.modal-close:focus .modal-icon {
-  color: var(--color-blue);
-} */
 
 .modal-icon {
   position: absolute;
