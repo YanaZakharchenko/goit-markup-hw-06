@@ -708,14 +708,14 @@ img {
   font-size: 20px;
   text-align: center;
   margin-bottom: 12px;
-}
+} 
 
 .form-set {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
-
 }
+
 .form-imput {
   width: 448px;
   height: 40px;
@@ -745,9 +745,9 @@ img {
 
 
 
-.checkbox {
-  /* appearance: none;
-  position: absolute; */
+/* .checkbox {
+  appearance: none;
+  position: absolute;
 
   position: absolute;
   width: 1px;
@@ -785,4 +785,4 @@ img {
 
 .checkbox:checked ~ label {
   transform: translateX(20px);
-}
+} */
