@@ -13,6 +13,7 @@
   --border-clients-hover: 1px solid #2196f3;
   --border-modal-close: 1px solid rgba(0, 0, 0, 0.1);
   --border-mailing-input: 1px solid rgba(255, 255, 255, 0.3);
+  --border-form-input: 1px solid rgba(33, 33, 33, 0.2);
   --background-icons: rgba(255, 255, 255, 0.1);
   --background-features: rgba(47, 48, 58, 0.8);
   --background-portfolio: rgba(33, 150, 243, 0.9);
@@ -685,11 +686,64 @@ img {
   cursor: pointer;
 }
 
+/* .modal-close:hover .modal-icon,
+.modal-close:focus .modal-icon {
+  color: var(--color-blue);
+} */
+
 .modal-icon {
   position: absolute;
   top: 5px;
   right: 5px;
 }
+
+
+/* ФОРМА МОДАЛКИ */
+
+.form-list {
+  margin: 40px;
+}
+
+.form-title {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.form-set {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+}
+.form-imput {
+  width: 448px;
+  height: 40px;
+  padding-left: 45px; 
+  border-radius: 4px;
+  border: var(--border-form-input);
+}
+
+.form-label {
+  font-weight:400;
+  letter-spacing: 0.01em;
+  color: var(--color-gray);
+
+  display: flex;
+  margin-bottom: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .checkbox {
   /* appearance: none;
