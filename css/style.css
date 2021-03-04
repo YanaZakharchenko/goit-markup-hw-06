@@ -728,11 +728,19 @@ img {
 }
 
 
+.form-list .imput-set {
+  position: relative;
+}
 
+.form-list .form-icon {
+  position: absolute;
+  top: 14px;
+  left: 15px;
+}
 
-
-
-
+.form-list .form-imput:focus ~ .form-icon {
+  fill: var(--color-blue);
+}
 
 
 
