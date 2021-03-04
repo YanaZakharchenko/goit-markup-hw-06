@@ -767,6 +767,11 @@ img {
   color: var(--color-blue);
 }
 
+.universal-btn.form {
+  display: flex;
+  margin: auto;
+}
+
 /* .checkbox {
   appearance: none;
   position: absolute;
