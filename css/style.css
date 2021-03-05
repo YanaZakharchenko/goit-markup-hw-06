@@ -210,7 +210,7 @@ img {
   line-height: 1.9;
   font-size: 16px;
   letter-spacing: 0.06em;
-
+  width: 200px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -501,6 +501,13 @@ img {
   background-color: transparent;
   border: var(--border-mailing-input);
   box-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+  transition: border var(--animation);
+}
+
+.mailing-input:hover,
+.mailing-input:focus {
+  border: var(--border-clients-hover);
 }
 
 .mailing-input::placeholder {
@@ -719,11 +726,11 @@ img {
 
 .form-imput {
   width: 100%;
-  height: 40px;
-  padding: 0 0 0 45px;
+  padding: 14px 40px;
   border-radius: 4px;
   border: var(--border-form-input);
   outline: none;
+  cursor: pointer;
 
   transition: border var(--animation);
 }
@@ -781,6 +788,40 @@ img {
   color: rgba(117, 117, 117, 0.5);
 }
 
+/* ЧЕКБОКС */
+
+.form-checkbox {
+  display: flex;
+}
+
+.checkbox-input {
+  appearance: none;
+  position: absolute;
+  width: 16px;
+  height: 15px;
+}
+
+.checkbox-icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+
+  outline: none;
+  border: 2px solid #212121;
+  border-radius: 2px;
+}
+
+.checkbox-input:checked + .checkbox-icon {
+  background-color: fill (--color-blue);
+  border-color: transparent;
+}
+
+.checkbox-text {
+  font-weight: 400;
+  color: var(--color-gray);
+}
+
 .conditions {
   font-weight: 400;
   text-decoration: underline;
@@ -790,13 +831,14 @@ img {
 .universal-btn.form {
   display: flex;
   margin: auto;
+  padding: 10px 55px;
+  margin-top: 30px;
 }
 
 /* .checkbox {
   appearance: none;
   position: absolute;
 
-  position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
