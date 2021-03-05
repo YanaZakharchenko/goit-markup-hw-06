@@ -812,14 +812,18 @@ img {
   height: 15px;
   margin-right: 7px;
 
-  outline: none;
-  border: 2px solid #212121;
+  border: 1px solid #212121;
   border-radius: 2px;
 }
 
 .checkbox-input:checked + .checkbox-icon {
   background-color: var (--color-blue);
   border-color: transparent;
+}
+
+.checkbox-input:hover + .checkbox-icon,
+.checkbox-input:focus + .checkbox-icon {
+  border-color: var(--color-blue);
 }
 
 .checkbox-text {
@@ -838,12 +842,4 @@ img {
   margin: auto;
   padding: 10px 55px;
   margin-top: 30px;
-}
-
-.label {
-  transition: transform 250ms linear;
-}
-
-.checkbox:checked ~ label {
-  transform: translateX(20px);
 }
