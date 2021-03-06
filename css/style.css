@@ -410,6 +410,7 @@ img {
 .footer-nav {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 
 .footer-size {
@@ -427,7 +428,7 @@ img {
 }
 
 .info-contacts {
-  font-style: 400;
+  font-style: normal;
   font-weight: 400;
   line-height: 1.7;
 }
@@ -498,6 +499,7 @@ img {
   padding: 15px 16px;
   margin-right: 12px;
   border-radius: 4px;
+  color: var(--color-white);
   background-color: transparent;
   border: var(--border-mailing-input);
   box-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -774,6 +776,7 @@ img {
   margin-bottom: 20px;
   border-radius: 4px;
   border: var(--border-form-input);
+  resize: none;
   outline: none;
 
   transition: border var(--animation);
